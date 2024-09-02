@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zomato</title>
+    <link rel="icon" href="./pizza-slice-solid.svg">ss
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        overflow-x: hidden;
+      }
+      .container {
+        height: 400px;
+        width: 100vw;
+        background-image: url(./backgroud.jpg);
+        background-position: center;
+        background-size: cover;
+        color: #f5f5f5;
+      }
+
+      #box {
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: end;
+        align-items: center;
+      }
+
+      .p1 {
+        margin-right: 50px;
+        font-size: 20px;
+      }
+      .p1:hover {
+        background-color: #f2f2f2;
+        color: #000000fc;
+        padding: 5px;
+        font-weight: 500;
+        border-radius: 6px;
+        border: none;
+        text-decoration: underline;
+      }
+
+      .cont {
+        text-align: center;
+      }
+
+      .cont p {
+        font-size: 30px;
+        font-weight: 500;
+        margin: 20px;
+      }
+
+      .cont input {
+        border-radius: 5px;
+        padding: 10px;
+        border: none;
+        width: 275px;
+      }
+      .cont input:hover {
+        background-color: #ffffe6;
+        color: #000000;
+        font-weight: 600;
+      }
+      #box2aa {
+        margin: 10px 20px;
+      }
+
+      #box2 {
+        height: 180px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 15px;
+      }
+      .box2a img {
+        height: 100%;
+        border-radius: 50%;
+        width: 100%;
+      }
+      .box2a {
+        box-sizing: border-box;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+          0 5px 18px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+      }
+      .box2a:hover {
+        box-shadow: 0 4px 6px 5px rgba(0, 0, 0, 0.6);
+      }
+
+      .boxp {
+        text-align: center;
+        font-weight: 600;
+      }
+      #box2aa1 {
+        margin: 30px 20px 0px 20px;
+      }
+
+      #box3 {
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px 100px;
+      }
+      .box3a img {
+        height: 100%;
+        width: 100%;
+      }
+      .box3a:hover {
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.8);
+      }
+      .boxp1 {
+        text-align: center;
+        font-weight: 600;
+      }
+
+      #box4 {
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 15px;
+      }
+      .box4a img {
+        height: 100%;
+        width: 100%;
+      }
+
+      .box4a {
+        margin: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+          0 5px 18px 0 rgba(0, 0, 0, 0.2);
+      }
+      .box4a:hover {
+        box-shadow: 0 4px 6px 5px rgba(0, 0, 0, 0.6);
+      }
+
+      .box4a button {
+        border-radius: 50%;
+        padding: 10px;
+        border: none;
+        width: 40px;
+        margin: 0 8px;
+        color: #000000fc;
+        background-color: #97806332;
+      }
+      .box4a button:hover {
+        background-color: #00cc00;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="box">
+        <p class="p1">Investor Relation</p>
+        <p class="p1">LogIn</p>
+        <p class="p1">SignIn</p>
+      </div>
+      <div class="cont">
+        <h1>The Freedom Indori Restaurant</h1>
+        <p>Discover The Best Food</p>
+        <input type="text" placeholder="Search for restaurant" />
+      </div>
+    </div>
+    <div id="box2aa">
+      <h1>Inspiration for your first order</h1>
+    </div>
+
+    <div id="box2">
+      <div class="box2a">
+        <img src="./burger.jpg" alt="image1" />
+        <p class="boxp">Burger</p>
+      </div>
+      <div class="box2a">
+        <img src="./biryani.jpg" alt="image2" />
+        <p class="boxp">Biryani</p>
+      </div>
+      <div class="box2a">
+        <img src="./cake.jpg" alt="image3" />
+        <p class="boxp">Cake</p>
+      </div>
+      <div class="box2a">
+        <img src="./dosa.jpg" alt="image4" />
+        <p class="boxp">Dosa</p>
+      </div>
+      <div class="box2a">
+        <img src="./thali.jpg" alt="image5" />
+        <p class="boxp">Thali</p>
+      </div>
+      <div class="box2a">
+        <img src="./pizza.jpg" alt="image6" />
+        <p class="boxp">Pizza</p>
+      </div>
+    </div>
+
+    <div id="box2aa1">
+      <h1>Top brands for you</h1>
+    </div>
+
+    <div id="box3">
+      <div class="box3a">
+        <img src="./apna-sweet.jpg" alt="" />
+        <p class="boxp1">Apna Sweets</p>
+      </div>
+      <div class="box3a">
+        <img src="./domino's-pizza.avif" alt="" />
+        <p class="boxp1">Domino's Pizza</p>
+      </div>
+      <div class="box3a">
+        <img src="./vijay-chat.jpg" alt="" />
+        <p class="boxp1">Vijay Chaat House</p>
+      </div>
+      <div class="box3a">
+        <img src="./pizza-hut.jpg" alt="" />
+        <p class="boxp1">Pizza Hut</p>
+      </div>
+    </div>
+
+    <div id="box4">
+      <div class="box4a">
+        <img src="./apna-sweet-cart.jpg" alt="" />
+        <button onclick="add('count-1')">+</button>
+        <span id="count-1">0</span>
+        <button onclick="minus('count-1')">-</button>
+      </div>
+      <div class="box4a">
+        <img src="./dutta-gk.jpg" alt="" />
+        <button onclick="add('count-2')">+</button>
+        <span id="count-2">0</span>
+        <button onclick="minus('count-2')">-</button>
+      </div>
+      <div class="box4a">
+        <img src="./mcdonald's-cart.jpg" alt="" />
+        <button onclick="add('count-3')">+</button>
+        <span id="count-3">0</span>
+        <button onclick="minus('count-3')">-</button>
+      </div>
+      <div class="box4a">
+        <img src="./maa-ki-rasoi.jpg" alt="" />
+        <button onclick="add('count-4')">+</button>
+        <span id="count-4">0</span>
+        <button onclick="minus('count-4')">-</button>
+      </div>
+    </div>
+    <script>
+
+//     let count=0;
+// function add(){
+//     count++;
+//     p1=document.getElementById('zero');
+//     p1.innerText=count;
+// }
+
+// function minus(){
+//     if(count>0){
+//     count--;
+//     p1=document.getElementById('zero');
+//     p1.innerText=count;
+// }
+// }
+
+function add(id) {
+        var element = document.getElementById(id);
+        var count = parseInt(element.innerText);
+        element.innerText = count + 1;
+    }
+
+    function minus(id) {
+        var element = document.getElementById(id);
+        var count = parseInt(element.innerText);
+        if (count > 0) {
+            element.innerText = count - 1;
+        }
+    }
+
+
+    </script>
+  </body>
+</html>

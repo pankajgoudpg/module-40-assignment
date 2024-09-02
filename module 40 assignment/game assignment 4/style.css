@@ -1,0 +1,33 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+#board {
+  height: 540px;
+  width: 630px;
+  background-color: #ffcc00;
+  border: 8px solid #806600(0, 0, 0, 0.5);
+  padding: 10px;
+
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px 5px #404040, 0 8px 16px 3px gray;
+}
+.tile {
+  height: 70px;
+  width: 70px;
+  margin: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 166, 0, 0.427);
+}
+
+.red-piece {
+  background-color: #ff0000;
+}
+
+.yellow-piece {
+  background-color: #008000;
+}

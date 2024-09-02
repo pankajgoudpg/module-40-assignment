@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Project</title>
+
+    <style>
+      #container {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        margin: 100px 500px;
+        padding: 10px;
+        border: 1px solid white;
+        box-shadow: 0 2px 4px 2px gray, 0 4px 16px 2px rgba(0, 0, 0, 1);
+      }
+      span {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      button {
+        padding: 10px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- HTML part of  -->
+    <div id="container">
+      <h1>Counter App</h1>
+      <button id="inc">Increment by 1</button>
+      <span id="count">0</span>
+      <button id="dec">Decrement by 1</button><br />
+      <button id="rest-btn">Reset Value</button>
+    </div>
+
+
+    <!-- java script part  -->
+    <script>
+      let Inc = document.getElementById("inc");
+      let Dec = document.getElementById("dec");
+      let restBtn = document.getElementById("rest-btn");
+      let count = document.getElementById("count");
+
+      Inc.addEventListener("click", () => {
+        let countvalue = parseInt(count.innerText);
+        count.innerText = countvalue + 1;
+      });
+
+      Dec.addEventListener("click", () => {
+        let countvalue = parseInt(count.innerText);
+        // if condition use when output zero than we decrement the value the value is shop  off zero no decrement value minus value(-)
+        if (countvalue > 0) { 
+          count.innerText = countvalue - 1;
+        }
+      });
+
+      restBtn.addEventListener("click", () => {
+        count.innerText = 0;
+      });
+    </script>
+  </body>
+</html>
